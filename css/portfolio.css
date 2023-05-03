@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+main section{
+    display:flex;
+    gap:3rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+.portfolio-image{
+    width: 35%;
+}
+.portfolio-image img{
+    width: 100%;
+}
+h2{
+    text-align: center;
+}
+.portfolio-items{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item{
+    width: 45%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: .5rem;
+    margin: 1rem 0;
+}
+.item:hover{
+    background-color: azure;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgb(168, 168, 168);
+    border: none;
+}
+
+@media screen and (max-width:680px){
+    main section{
+        display: block;
+    }
+    .portfolio-image, .portfolio-items{
+        width: 100%;
+    }
+    .item{
+        width: 100%;
+    }
+}
